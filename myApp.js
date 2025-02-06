@@ -20,8 +20,7 @@ app.use(helmet.hsts({maxAge: timeinSeconds, force: true}));
 
 app.use(helmet.dnsPrefetchControl());
 
-
-
+app.use(helmet.noCache());
 
 
 
