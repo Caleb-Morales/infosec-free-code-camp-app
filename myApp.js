@@ -4,7 +4,7 @@ const app = express();
 
 
 
-
+app.use(helmet.hidePoweredBy());
 
 
 
@@ -54,5 +54,5 @@ app.get("/", function (request, response) {
 });
 let port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`🍃server Security started on port ${port}`);
+  console.log(`🍃 server Security started on port ${port}`);
 });
